@@ -19,9 +19,12 @@ export default function Home() {
       </h1>
 
       <p className="text-lg text-zinc-600 dark:text-zinc-400 max-w-xl mb-10">
-        Английский, который подстраивается под тебя
-        <br />
-        Умный обучающий движок, мини-игры и практика речи
+        <span className="block">
+          Английский, который подстраивается под тебя
+        </span>
+        <span className="block mt-3">
+          Умный обучающий движок, мини-игры и практика речи
+        </span>
       </p>
 
       <div className="flex gap-4 flex-wrap justify-center items-center">
@@ -54,7 +57,9 @@ export default function Home() {
             Media & Copyright
           </Link>
         </div>
-        <div className="mt-3">© {new Date().getFullYear()} Tima English</div>
+        <div className="mt-3">
+          © {new Date().getFullYear()} Tima English
+        </div>
       </footer>
     </main>
   );
