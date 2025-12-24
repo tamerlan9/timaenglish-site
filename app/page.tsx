@@ -2,9 +2,13 @@
 import Image from "next/image";
 import Link from "next/link";
 
+const INSTAGRAM_WEB = "https://instagram.com/tima_english";
+const TELEGRAM_WEB = "https://t.me/tima_english";
+const WHATSAPP_WEB = "https://chat.whatsapp.com/DxYYvx1BYpvHdSXaNMLpk5";
+
 export default function Home() {
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center px-6 text-center bg-zinc-50 dark:bg-black">
+    <main className="min-h-[100svh] flex flex-col items-center justify-center px-6 text-center bg-zinc-50 dark:bg-black">
       <Image
         src="/logo.png"
         alt="Tima English logo"
@@ -18,13 +22,9 @@ export default function Home() {
         Tima English
       </h1>
 
-      <p className="text-lg text-zinc-600 dark:text-zinc-400 max-w-xl mb-10">
-        <span className="block">
-          Английский, который подстраивается под тебя
-        </span>
-        <span className="block mt-3">
-          Умный обучающий движок, мини-игры и практика речи
-        </span>
+      <p className="text-lg text-zinc-600 dark:text-zinc-400 max-w-xl mb-8">
+        <span className="block">Английский, который подстраивается под тебя</span>
+        <span className="block mt-3">Умный обучающий движок, мини-игры и практика речи</span>
       </p>
 
       <div className="flex gap-4 flex-wrap justify-center items-center">
@@ -45,6 +45,48 @@ export default function Home() {
         </a>
       </div>
 
+      {/* Socials */}
+      <div className="mt-8 flex items-center justify-center gap-4">
+        <a
+          href={TELEGRAM_WEB}
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Telegram"
+          className="inline-flex items-center justify-center rounded-full p-3
+                     bg-white/5 ring-1 ring-white/10
+                     transition-transform duration-150
+                     hover:scale-110 active:scale-95"
+        >
+          <img src="/telegram.svg" alt="Telegram" className="h-6 w-6" />
+        </a>
+
+        <a
+          href={INSTAGRAM_WEB}
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Instagram"
+          className="inline-flex items-center justify-center rounded-full p-3
+                     bg-white/5 ring-1 ring-white/10
+                     transition-transform duration-150
+                     hover:scale-110 active:scale-95"
+        >
+          <img src="/instagram.svg" alt="Instagram" className="h-6 w-6" />
+        </a>
+
+        <a
+          href={WHATSAPP_WEB}
+          target="_blank"
+          rel="noreferrer"
+          aria-label="WhatsApp"
+          className="inline-flex items-center justify-center rounded-full p-3
+                     bg-white/5 ring-1 ring-white/10
+                     transition-transform duration-150
+                     hover:scale-110 active:scale-95"
+        >
+          <img src="/whatsapp.svg" alt="WhatsApp" className="h-6 w-6" />
+        </a>
+      </div>
+
       <footer className="mt-12 text-sm text-zinc-500 dark:text-zinc-400">
         <div className="flex flex-wrap gap-x-4 gap-y-2 justify-center">
           <Link className="hover:underline" href="/privacy">
@@ -57,9 +99,8 @@ export default function Home() {
             Media & Copyright
           </Link>
         </div>
-        <div className="mt-3">
-          © {new Date().getFullYear()} Tima English
-        </div>
+
+        <div className="mt-3">© {new Date().getFullYear()} Tima English</div>
       </footer>
     </main>
   );
