@@ -53,7 +53,7 @@ export default function Home() {
           rel="noreferrer"
           aria-label="Telegram"
           className="inline-flex items-center justify-center rounded-full p-3
-                     bg-white/5 ring-1 ring-white/10
+                     bg-white/10 ring-1 ring-white/25
                      transition-transform duration-150
                      hover:scale-110 active:scale-95"
         >
@@ -66,7 +66,7 @@ export default function Home() {
           rel="noreferrer"
           aria-label="Instagram"
           className="inline-flex items-center justify-center rounded-full p-3
-                     bg-white/5 ring-1 ring-white/10
+                     bg-white/10 ring-1 ring-white/25
                      transition-transform duration-150
                      hover:scale-110 active:scale-95"
         >
@@ -79,7 +79,7 @@ export default function Home() {
           rel="noreferrer"
           aria-label="WhatsApp"
           className="inline-flex items-center justify-center rounded-full p-3
-                     bg-white/5 ring-1 ring-white/10
+                     bg-white/10 ring-1 ring-white/25
                      transition-transform duration-150
                      hover:scale-110 active:scale-95"
         >
