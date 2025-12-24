@@ -27,7 +27,7 @@ export default function Home() {
 
       <p className="text-lg text-zinc-600 dark:text-zinc-400 max-w-xl mb-8">
         <span className="block">Английский, который подстраивается под тебя</span>
-        <span className="block mt-3">Умный обучающий движок, мини-игры и практика речи</span>
+        <span className="block mt-3">Ассоциации, мини-игры и живая речь</span>
       </p>
 
       <div className="flex gap-4 flex-wrap justify-center items-center">
