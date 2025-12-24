@@ -8,7 +8,10 @@ const WHATSAPP_WEB = "https://chat.whatsapp.com/DxYYvx1BYpvHdSXaNMLpk5";
 
 export default function Home() {
   return (
-    <main className="min-h-[100svh] flex flex-col items-center justify-center px-6 text-center bg-zinc-50 dark:bg-black">
+    <main className="min-h-[100svh] flex flex-col items-center justify-center
+                 px-6 py-10 sm:py-16
+                 text-center bg-zinc-50 dark:bg-black">
+
       <Image
         src="/logo.png"
         alt="Tima English logo"
