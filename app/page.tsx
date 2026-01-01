@@ -8,10 +8,11 @@ const WHATSAPP_WEB = "https://chat.whatsapp.com/DxYYvx1BYpvHdSXaNMLpk5";
 
 export default function Home() {
   return (
-    <main className="min-h-[100svh] flex flex-col items-center justify-center
+    <main
+      className="min-h-[100svh] flex flex-col items-center justify-center
                  px-6 py-10 sm:py-16
-                 text-center bg-zinc-50 dark:bg-black">
-
+                 text-center bg-zinc-50 dark:bg-black"
+    >
       <Image
         src="/logo.png"
         alt="Tima English logo"
@@ -26,10 +27,16 @@ export default function Home() {
       </h1>
 
       <p className="text-lg text-zinc-600 dark:text-zinc-400 max-w-xl mb-8">
-        <span className="block">Английский, который подстраивается под тебя</span>
-        <span className="block mt-3">Ассоциации, мини-игры и живая речь</span>
+        <span className="block">
+          Английский, который подстраивается под тебя
+        </span>
+        <span className="block mt-3">
+          Ассоциации, мини-игры и живая речь
+        </span>
       </p>
 
+      {/* Store buttons (temporarily disabled) */}
+      {/*
       <div className="flex gap-4 flex-wrap justify-center items-center">
         <a href="#" aria-label="Download on the App Store">
           <img
@@ -46,6 +53,12 @@ export default function Home() {
             style={{ height: 60, width: "auto" }}
           />
         </a>
+      </div>
+      */}
+
+      {/* Coming soon */}
+      <div className="mt-2 text-sm text-zinc-500 dark:text-zinc-400">
+        Скоро в App Store · Скоро в Google Play
       </div>
 
       {/* Socials */}
@@ -103,7 +116,20 @@ export default function Home() {
           </Link>
         </div>
 
-        <div className="mt-3">© {new Date().getFullYear()} Tima English</div>
+        {/* Support email — важно для App Store / Google Play */}
+        <div className="mt-3">
+          Support:{" "}
+          <a
+            href="mailto:support@timaenglish.app"
+            className="hover:underline"
+          >
+            support@timaenglish.app
+          </a>
+        </div>
+
+        <div className="mt-2">
+          © {new Date().getFullYear()} Tima English
+        </div>
       </footer>
     </main>
   );
