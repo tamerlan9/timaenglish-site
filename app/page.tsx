@@ -118,7 +118,7 @@ export default function Home() {
 
         {/* Support email — важно для App Store / Google Play */}
         <div className="mt-3">
-          Contact:{" "}
+          Contact us:{" "}
           <a
             href="mailto:support@timaenglish.app"
             className="hover:underline"
