@@ -25,13 +25,12 @@ export default function DeleteAccountPage() {
           <h2 className="text-lg font-semibold">What to include</h2>
           <ul className="mt-3 list-disc pl-5 text-zinc-700 dark:text-zinc-300 space-y-1">
             <li>The email address used to sign in</li>
-            <li>(Optional) Your user ID, if shown in the app</li>
           </ul>
 
           <h2 className="mt-5 text-lg font-semibold">Data we delete</h2>
           <ul className="mt-3 list-disc pl-5 text-zinc-700 dark:text-zinc-300 space-y-1">
             <li>Account information (email, user ID)</li>
-            <li>Learning progress and preferences</li>
+            <li>Learning progress</li>
           </ul>
 
           <h2 className="mt-5 text-lg font-semibold">Retention</h2>
