@@ -39,6 +39,12 @@ export default function LegalPage({ title, updatedAt, children }: Props) {
             >
               Media
             </Link>
+            <Link
+              href="/delete-account"
+              className="text-zinc-600 hover:underline dark:text-zinc-400"
+            >
+              Delete account
+            </Link>
           </div>
         </div>
 
