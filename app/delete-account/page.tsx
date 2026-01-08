@@ -1,51 +1,75 @@
 // app/delete-account/page.tsx
-import Link from "next/link";
+import LegalPage from "../legal/_components/LegalPage";
+
+export const metadata = {
+  title: "Account Deletion • Tima English",
+};
+
+const sectionCls =
+  "pt-6 border-t border-black/10 dark:border-white/10 first:border-0 first:pt-0";
+
+const h2Cls =
+  "text-lg font-semibold tracking-tight text-black dark:text-white";
+
+const ulCls =
+  "mt-3 list-decimal pl-6 space-y-1 text-zinc-700 dark:text-zinc-300";
+
+const pCls = "text-zinc-700 dark:text-zinc-300 leading-relaxed";
 
 export default function DeleteAccountPage() {
   return (
-    <main className="min-h-[100svh] bg-zinc-50 dark:bg-black px-6 py-10 sm:py-16">
-      <div className="mx-auto max-w-2xl text-zinc-900 dark:text-zinc-100">
-        <h1 className="text-3xl font-bold">Account and Data Deletion</h1>
+    <LegalPage title="Account and Data Deletion" updatedAt="2026-01-08">
+      {/* Intro */}
+      <p className={pCls}>
+        Users of <strong>Tima English</strong> can delete their account and all
+        associated personal data at any time.
+      </p>
+
+      {/* Main method */}
+      <section className={sectionCls}>
+        <h2 className={h2Cls}>How to delete your account</h2>
+        <ol className={ulCls}>
+          <li>Open the Tima English app</li>
+          <li>Go to <strong>Profile → Settings</strong></li>
+          <li>Select <strong>Delete account</strong> and confirm</li>
+        </ol>
 
         <p className="mt-4 text-zinc-700 dark:text-zinc-300">
-          To request deletion of your Tima English account and associated data,
-          please contact us:
+          This action permanently deletes your account and learning data.
+        </p>
+      </section>
+
+      {/* Fallback */}
+      <section className={sectionCls}>
+        <h2 className={h2Cls}>If you cannot access the app</h2>
+        <p className={pCls}>
+          If you are unable to access the app, contact our support team and provide
+          your <strong>User ID</strong> (available in the app settings).
         </p>
 
-        <p className="mt-3">
-          <a
-            className="font-medium underline"
-            href="mailto:support@timaenglish.app?subject=Account%20deletion%20request"
-          >
-            support@timaenglish.app
-          </a>
+        <div className="mt-3 font-semibold text-black dark:text-white">
+          support@timaenglish.app
+        </div>
+      </section>
+
+      {/* Data deleted */}
+      <section className={sectionCls}>
+        <h2 className={h2Cls}>Data we delete</h2>
+        <ul className="mt-3 list-disc pl-6 space-y-1 text-zinc-700 dark:text-zinc-300">
+          <li>Account identifier (user ID)</li>
+          <li>Learning progress and statistics</li>
+          <li>Account-related preferences</li>
+        </ul>
+      </section>
+
+      {/* Retention */}
+      <section className={sectionCls}>
+        <h2 className={h2Cls}>Retention period</h2>
+        <p className={pCls}>
+          All personal data is permanently deleted within 30 days. Limited data
+          may be retained for legal or security purposes during this period.
         </p>
-
-        <div className="mt-6 rounded-xl border border-zinc-200 dark:border-zinc-800 p-5">
-          <h2 className="text-lg font-semibold">What to include</h2>
-          <ul className="mt-3 list-disc pl-5 text-zinc-700 dark:text-zinc-300 space-y-1">
-            <li>The email address used to sign in</li>
-          </ul>
-
-          <h2 className="mt-5 text-lg font-semibold">Data we delete</h2>
-          <ul className="mt-3 list-disc pl-5 text-zinc-700 dark:text-zinc-300 space-y-1">
-            <li>Account information (email, user ID)</li>
-            <li>Learning progress</li>
-          </ul>
-
-          <h2 className="mt-5 text-lg font-semibold">Retention</h2>
-          <p className="mt-3 text-zinc-700 dark:text-zinc-300">
-            Some data may be retained for legal, security, or accounting purposes
-            for up to 30 days.
-          </p>
-        </div>
-
-        <div className="mt-8">
-          <Link className="underline text-zinc-700 dark:text-zinc-300" href="/">
-            ← Back to home
-          </Link>
-        </div>
-      </div>
-    </main>
+      </section>
+    </LegalPage>
   );
 }
