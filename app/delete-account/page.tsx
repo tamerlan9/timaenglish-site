@@ -44,7 +44,8 @@ export default function DeleteAccountPage() {
         <h2 className={h2Cls}>If you cannot access the app</h2>
         <p className={pCls}>
           If you are unable to access the app, contact our support team and provide
-          your <strong>User ID</strong> (available in the app settings).
+          your <strong>User ID</strong>, which can be found in the app settings under
+        <strong> Technical information</strong>.
         </p>
 
         <div className="mt-3 font-semibold text-black dark:text-white">
