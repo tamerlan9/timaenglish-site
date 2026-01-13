@@ -69,6 +69,21 @@ export default function Home() {
         */}
       </div>
 
+      {/* Pricing note */}
+      <div
+        className="mt-4 max-w-xl rounded-2xl px-4 py-3
+                   bg-white/70 dark:bg-white/5
+                   ring-1 ring-black/5 dark:ring-white/10
+                   text-sm text-zinc-700 dark:text-zinc-300"
+      >
+        <div className="font-medium">
+          Бесплатно до 1 марта
+        </div>
+        <div className="mt-1 text-zinc-600 dark:text-zinc-400">
+          Затем — подписка. Активным ученикам — скидка на первый месяц.
+        </div>
+      </div>
+
       {/* Coming soon */}
       <div className="mt-2 text-sm text-zinc-500 dark:text-zinc-400">
         Скоро в Google Play
