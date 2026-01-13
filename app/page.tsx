@@ -6,6 +6,9 @@ const INSTAGRAM_WEB = "https://instagram.com/tima_english";
 const TELEGRAM_WEB = "https://t.me/tima_english";
 const WHATSAPP_WEB = "https://chat.whatsapp.com/DxYYvx1BYpvHdSXaNMLpk5";
 
+const APPSTORE_URL = "https://apps.apple.com/us/app/tima-english/id6757214750";
+// const GOOGLEPLAY_URL = ""; // пока нет
+
 export default function Home() {
   return (
     <main
@@ -27,18 +30,18 @@ export default function Home() {
       </h1>
 
       <p className="text-lg text-zinc-600 dark:text-zinc-400 max-w-xl mb-8">
-        <span className="block">
-          Английский, который подстраивается под тебя
-        </span>
-        <span className="block mt-3">
-          Ассоциации, мини-игры и живая речь
-        </span>
+        <span className="block">Английский, который подстраивается под тебя</span>
+        <span className="block mt-3">Ассоциации, мини-игры и живая речь</span>
       </p>
 
-      {/* Store buttons (temporarily disabled) */}
-      {/*
+      {/* Store buttons */}
       <div className="flex gap-4 flex-wrap justify-center items-center">
-        <a href="#" aria-label="Download on the App Store">
+        <a
+          href={APPSTORE_URL}
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Download on the App Store"
+        >
           <img
             src="/appstore.svg"
             alt="Download on the App Store"
@@ -46,19 +49,25 @@ export default function Home() {
           />
         </a>
 
-        <a href="#" aria-label="Get it on Google Play">
+        {/*
+        <a
+          href={GOOGLEPLAY_URL}
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Get it on Google Play"
+        >
           <img
             src="/googleplay.svg"
             alt="Get it on Google Play"
             style={{ height: 60, width: "auto" }}
           />
         </a>
+        */}
       </div>
-      */}
 
       {/* Coming soon */}
       <div className="mt-2 text-sm text-zinc-500 dark:text-zinc-400">
-        Скоро в App Store · Скоро в Google Play
+        Доступно в App Store · Скоро в Google Play
       </div>
 
       {/* Socials */}
@@ -119,20 +128,14 @@ export default function Home() {
           </Link>
         </div>
 
-        {/* Support email — важно для App Store / Google Play */}
         <div className="mt-3">
           Contact us:{" "}
-          <a
-            href="mailto:support@timaenglish.app"
-            className="hover:underline"
-          >
+          <a href="mailto:support@timaenglish.app" className="hover:underline">
             support@timaenglish.app
           </a>
         </div>
 
-        <div className="mt-2">
-          © {new Date().getFullYear()} Tima English
-        </div>
+        <div className="mt-2">© {new Date().getFullYear()} Tima English</div>
       </footer>
     </main>
   );
