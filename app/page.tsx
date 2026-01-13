@@ -68,7 +68,10 @@ export default function Home() {
         </a>
         */}
       </div>
-
+	{/* Coming soon */}
+      <div className="mt-2 text-sm text-zinc-500 dark:text-zinc-400">
+        Скоро в Google Play
+      </div>
       {/* Pricing note */}
       <div
         className="mt-4 max-w-xl rounded-2xl px-4 py-3
@@ -84,10 +87,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Coming soon */}
-      <div className="mt-2 text-sm text-zinc-500 dark:text-zinc-400">
-        Скоро в Google Play
-      </div>
+      
 
       {/* Socials */}
       <div className="mt-8 flex items-center justify-center gap-4">
