@@ -30,8 +30,12 @@ export default function Home() {
       </h1>
 
       <p className="text-lg text-zinc-600 dark:text-zinc-400 max-w-xl mb-8">
-        <span className="block">Английский, который подстраивается под тебя</span>
-        <span className="block mt-3">Ассоциации, мини-игры и живая речь</span>
+        <span className="block">
+          Английский, который подстраивается под тебя
+        </span>
+        <span className="block mt-3">
+          Ассоциации, мини-игры и живая речь
+        </span>
       </p>
 
       {/* Store buttons */}
@@ -67,7 +71,7 @@ export default function Home() {
 
       {/* Coming soon */}
       <div className="mt-2 text-sm text-zinc-500 dark:text-zinc-400">
-        Доступно в App Store · Скоро в Google Play
+        Скоро в Google Play
       </div>
 
       {/* Socials */}
@@ -130,12 +134,17 @@ export default function Home() {
 
         <div className="mt-3">
           Contact us:{" "}
-          <a href="mailto:support@timaenglish.app" className="hover:underline">
+          <a
+            href="mailto:support@timaenglish.app"
+            className="hover:underline"
+          >
             support@timaenglish.app
           </a>
         </div>
 
-        <div className="mt-2">© {new Date().getFullYear()} Tima English</div>
+        <div className="mt-2">
+          © {new Date().getFullYear()} Tima English
+        </div>
       </footer>
     </main>
   );
