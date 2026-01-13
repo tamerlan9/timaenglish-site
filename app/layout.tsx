@@ -1,3 +1,4 @@
+// app/layout.tsx
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -13,21 +14,41 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://timaenglish.app"),
+
   title: {
     default: "Tima English",
     template: "%s • Tima English",
   },
+
   description: "Английский, который подстраивается под тебя",
   applicationName: "Tima English",
+
   icons: {
     icon: "/favicon.png",
     apple: "/apple-touch-icon.png",
   },
+
   openGraph: {
     title: "Tima English",
     description: "Умный обучающий движок, мини-игры и практика речи",
     siteName: "Tima English",
+    url: "https://timaenglish.app",
     type: "website",
+    images: [
+      {
+        url: "/og.jpg",
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Tima English",
+    description: "Умный обучающий движок, мини-игры и практика речи",
+    images: ["/og.jpg"],
   },
 };
 
