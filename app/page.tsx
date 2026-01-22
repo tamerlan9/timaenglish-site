@@ -6,8 +6,10 @@ const INSTAGRAM_WEB = "https://instagram.com/tima_english";
 const TELEGRAM_WEB = "https://t.me/tima_english";
 const WHATSAPP_WEB = "https://chat.whatsapp.com/DxYYvx1BYpvHdSXaNMLpk5";
 
-const APPSTORE_URL = "https://apps.apple.com/us/app/tima-english/id6757214750";
-// const GOOGLEPLAY_URL = ""; // пока нет
+const APPSTORE_URL =
+  "https://apps.apple.com/us/app/tima-english/id6757214750";
+const GOOGLEPLAY_URL =
+  "https://play.google.com/store/apps/details?id=kg.temirlan.timaenglish";
 
 export default function Home() {
   return (
@@ -53,7 +55,6 @@ export default function Home() {
           />
         </a>
 
-        {/*
         <a
           href={GOOGLEPLAY_URL}
           target="_blank"
@@ -66,12 +67,8 @@ export default function Home() {
             style={{ height: 60, width: "auto" }}
           />
         </a>
-        */}
       </div>
-	{/* Coming soon */}
-      <div className="mt-2 text-sm text-zinc-500 dark:text-zinc-400">
-        Скоро в Google Play
-      </div>
+
       {/* Pricing note */}
       <div
         className="mt-4 max-w-xl rounded-2xl px-4 py-3
@@ -79,15 +76,11 @@ export default function Home() {
                    ring-1 ring-black/5 dark:ring-white/10
                    text-sm text-zinc-700 dark:text-zinc-300"
       >
-        <div className="font-medium">
-          Бесплатно до 1 марта
-        </div>
+        <div className="font-medium">Бесплатно до 1 марта</div>
         <div className="mt-1 text-zinc-600 dark:text-zinc-400">
           Далее подписка. Активным ученикам — скидка на первый месяц
         </div>
       </div>
-
-      
 
       {/* Socials */}
       <div className="mt-8 flex items-center justify-center gap-4">
