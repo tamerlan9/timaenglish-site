@@ -49,7 +49,7 @@ export default function DeleteAccountPage() {
         </p>
 
         <div className="mt-3 font-semibold text-black dark:text-white">
-          support@timaenglish.app
+          timaenglish.app@gmail.com
         </div>
       </section>
 
