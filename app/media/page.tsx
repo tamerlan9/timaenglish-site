@@ -71,7 +71,7 @@ export default function MediaCopyright() {
         <div className="mt-5 rounded-xl border border-black/10 bg-black/5 p-4 dark:border-white/10 dark:bg-white/5">
           <div className="text-sm text-zinc-600 dark:text-zinc-400">Contact</div>
           <div className="mt-1 font-semibold text-black dark:text-white">
-            support@timaenglish.app
+            timaenglish.app@gmail.com
           </div>
         </div>
       </section>

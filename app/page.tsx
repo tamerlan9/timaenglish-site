@@ -143,10 +143,10 @@ export default function Home() {
         <div className="mt-3">
           Contact us:{" "}
           <a
-            href="mailto:support@timaenglish.app"
+            href="mailto:timaenglish.app@gmail.com"
             className="hover:underline"
           >
-            support@timaenglish.app
+            timaenglish.app@gmail.com
           </a>
         </div>
 

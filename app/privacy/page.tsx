@@ -85,7 +85,7 @@ export default function PrivacyPolicy() {
             You can request account and data deletion at any time by contacting:
           </p>
           <div className="mt-1 font-semibold text-black dark:text-white">
-            support@timaenglish.app
+            timaenglish.app@gmail.com
           </div>
         </div>
       </section>
