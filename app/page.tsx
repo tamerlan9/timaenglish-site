@@ -1,4 +1,6 @@
-// app/page.tsx
+"use client";
+
+import { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -12,6 +14,19 @@ const GOOGLEPLAY_URL =
   "https://play.google.com/store/apps/details?id=kg.temirlan.timaenglish";
 
 export default function Home() {
+  useEffect(() => {
+    const ua = navigator.userAgent || navigator.vendor;
+
+    const isAndroid = /android/i.test(ua);
+    const isIOS = /iPad|iPhone|iPod/.test(ua);
+
+    if (isAndroid) {
+      window.location.replace(GOOGLEPLAY_URL);
+    } else if (isIOS) {
+      window.location.replace(APPSTORE_URL);
+    }
+  }, []);
+
   return (
     <main
       className="min-h-[100svh] flex flex-col items-center justify-center
@@ -40,7 +55,6 @@ export default function Home() {
         </span>
       </p>
 
-      {/* Store buttons */}
       <div className="flex gap-4 flex-wrap justify-center items-center">
         <a
           href={APPSTORE_URL}
@@ -69,7 +83,6 @@ export default function Home() {
         </a>
       </div>
 
-      {/* Socials */}
       <div className="mt-8 flex items-center justify-center gap-4">
         <a
           href={TELEGRAM_WEB}
