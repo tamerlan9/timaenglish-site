@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const INSTAGRAM_WEB = "https://instagram.com/tima_english";
 const TELEGRAM_WEB = "https://t.me/tima_english";
-const WHATSAPP_WEB = "https://chat.whatsapp.com/DxYYvx1BYpvHdSXaNMLpk5";
+const WHATSAPP_WEB = "https://whatsapp.com/channel/0029Vb7WZk90gcfQxSF5Jm1f";
 
 const APPSTORE_URL =
   "https://apps.apple.com/us/app/tima-english/id6757214750";
