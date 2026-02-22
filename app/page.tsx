@@ -15,16 +15,18 @@ const GOOGLEPLAY_URL =
 
 export default function Home() {
   useEffect(() => {
-    const ua = navigator.userAgent || navigator.vendor;
+      if (typeof window === "undefined") return;
+        if (window.location.pathname !== "/") return;
 
-    const isAndroid = /android/i.test(ua);
-    const isIOS = /iPad|iPhone|iPod/.test(ua);
+        const ua = navigator.userAgent || navigator.vendor;
+        const isAndroid = /android/i.test(ua);
+        const isIOS = /iPad|iPhone|iPod/.test(ua);
 
-    if (isAndroid) {
-      window.location.replace(GOOGLEPLAY_URL);
-    } else if (isIOS) {
-      window.location.replace(APPSTORE_URL);
-    }
+        if (isAndroid) {
+          window.location.replace(GOOGLEPLAY_URL);
+        } else if (isIOS) {
+          window.location.replace(APPSTORE_URL);
+        }
   }, []);
 
   return (
