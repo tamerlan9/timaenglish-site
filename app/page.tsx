@@ -1,6 +1,3 @@
-"use client";
-
-import { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -8,27 +5,11 @@ const INSTAGRAM_WEB = "https://instagram.com/tima_english";
 const TELEGRAM_WEB = "https://t.me/tima_english";
 const WHATSAPP_WEB = "https://whatsapp.com/channel/0029Vb7WZk90gcfQxSF5Jm1f";
 
-const APPSTORE_URL =
-  "https://apps.apple.com/us/app/tima-english/id6757214750";
+const APPSTORE_URL = "https://apps.apple.com/app/id6757214750";
 const GOOGLEPLAY_URL =
   "https://play.google.com/store/apps/details?id=kg.temirlan.timaenglish";
 
 export default function Home() {
-  useEffect(() => {
-      if (typeof window === "undefined") return;
-        if (window.location.pathname !== "/") return;
-
-        const ua = navigator.userAgent || navigator.vendor;
-        const isAndroid = /android/i.test(ua);
-        const isIOS = /iPad|iPhone|iPod/.test(ua);
-
-        if (isAndroid) {
-          window.location.replace(GOOGLEPLAY_URL);
-        } else if (isIOS) {
-          window.location.replace(APPSTORE_URL);
-        }
-  }, []);
-
   return (
     <main
       className="min-h-[100svh] flex flex-col items-center justify-center
@@ -152,9 +133,7 @@ export default function Home() {
           </a>
         </div>
 
-        <div className="mt-2">
-          © {new Date().getFullYear()} Tima English
-        </div>
+        <div className="mt-2">© {new Date().getFullYear()} Tima English</div>
       </footer>
     </main>
   );
