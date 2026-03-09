@@ -57,7 +57,7 @@ export default function DeleteAccountPage() {
       <section className={sectionCls}>
         <h2 className={h2Cls}>Data we delete</h2>
         <ul className="mt-3 list-disc pl-6 space-y-1 text-zinc-700 dark:text-zinc-300">
-          <li>Account identifier (user ID)</li>
+          <li>Account</li>
           <li>Learning progress and statistics</li>
           <li>Account-related preferences</li>
         </ul>
