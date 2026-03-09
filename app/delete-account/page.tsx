@@ -43,8 +43,8 @@ export default function DeleteAccountPage() {
       <section className={sectionCls}>
         <h2 className={h2Cls}>If you cannot access the app</h2>
         <p className={pCls}>
-          If you are unable to access the app, contact our support team and provide the 
-          <strong>Account</strong> shown in the app settings under
+          If you are unable to access the app, contact our support team and provide the
+          <strong> Account</strong> shown in the app settings under
         <strong> Technical information</strong>.
         </p>
 
