@@ -18,7 +18,7 @@ const pCls = "text-zinc-700 dark:text-zinc-300 leading-relaxed";
 
 export default function DeleteAccountPage() {
   return (
-    <LegalPage title="Account and Data Deletion" updatedAt="2026-01-08">
+    <LegalPage title="Account and Data Deletion" updatedAt="2026-03-09">
       {/* Intro */}
       <p className={pCls}>
         Users of <strong>Tima English</strong> can delete their account and all
