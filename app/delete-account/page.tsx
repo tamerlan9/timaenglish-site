@@ -36,6 +36,7 @@ export default function DeleteAccountPage() {
 
         <p className="mt-4 text-zinc-700 dark:text-zinc-300">
           This action permanently deletes your account and learning data.
+          Any active subscription will no longer be associated with the deleted account.
         </p>
       </section>
 
