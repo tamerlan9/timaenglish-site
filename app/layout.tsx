@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     template: "%s • Tima English",
   },
 
-  description: "Английский, который подстраивается под тебя",
+  description: "Ассоциации, мини-игры и живая речь",
   applicationName: "Tima English",
 
   icons: {
@@ -35,13 +35,13 @@ export const metadata: Metadata = {
 
   openGraph: {
     title: "Tima English",
-    description: "Умный обучающий движок, мини-игры и практика речи",
+    description: "Ассоциации, мини-игры и живая речь",
     siteName: "Tima English",
     url: "https://timaenglish.app",
     type: "website",
     images: [
       {
-        url: "/og.jpg",
+        url: "/og2.jpg",
         width: 1200,
         height: 630,
       },
@@ -51,8 +51,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Tima English",
-    description: "Умный обучающий движок, мини-игры и практика речи",
-    images: ["/og.jpg"],
+    description: "Ассоциации, мини-игры и живая речь",
+    images: ["/og2.jpg"],
   },
 };
 
