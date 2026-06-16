@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     template: "%s • Tima English",
   },
 
-  description: "Ассоциации, мини-игры и живая речь",
+  description: "Разговорный английский",
   applicationName: "Tima English",
 
   icons: {
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
 
   openGraph: {
     title: "Tima English",
-    description: "Ассоциации, мини-игры и живая речь",
+    description: "Разговорный английский",
     siteName: "Tima English",
     url: "https://timaenglish.app",
     type: "website",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Tima English",
-    description: "Ассоциации, мини-игры и живая речь",
+    description: "Разговорный английский",
     images: ["/og2.jpg"],
   },
 };
