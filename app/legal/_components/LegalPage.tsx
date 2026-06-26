@@ -22,6 +22,12 @@ export default function LegalPage({ title, updatedAt, children }: Props) {
 
           <div className="flex flex-wrap gap-3 text-sm">
             <Link
+              href="/app-info"
+              className="text-zinc-600 hover:underline dark:text-zinc-400"
+            >
+              App Info
+            </Link>
+            <Link
               href="/privacy"
               className="text-zinc-600 hover:underline dark:text-zinc-400"
             >
