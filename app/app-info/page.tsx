@@ -24,7 +24,7 @@ export default function AppInfoPage() {
     <LegalPage title="App Info" updatedAt="2026-06-27">
       <p className={pCls}>
         Tima English is an English learning app focused on speaking practice,
-        vocabulary building, pronunciation, and real conversational English.
+        vocabulary, pronunciation, and real conversational English.
       </p>
 
       <section className={sectionCls}>
@@ -32,19 +32,8 @@ export default function AppInfoPage() {
         <p className={pCls}>
           Tima English helps users practice English through short interactive
           lessons, voice exercises, associations, examples, and mini-games. The
-          app is designed for both beginners and more advanced learners who want
-          to improve their speaking skills.
-        </p>
-      </section>
-
-      <section className={sectionCls}>
-        <h2 className={h2Cls}>Learning approach</h2>
-        <p className={pCls}>
-          Every learner is different. Vocabulary, grammar, pronunciation, and
-          speaking speed can vary from person to person. Because of this, Tima
-          English does not rely only on fixed traditional levels. Lessons are
-          generated as flexible combinations of words, phrases, and tasks that
-          imitate real speaking practice.
+          app adapts practice to the learner&apos;s progress and is designed for
+          both beginners and more advanced learners.
         </p>
       </section>
 
@@ -52,19 +41,10 @@ export default function AppInfoPage() {
         <h2 className={h2Cls}>Main features</h2>
         <ul className={ulCls}>
           <li>Personalized speaking lessons and voice exercises.</li>
-          <li>
-            Associations with images and phrases to help users remember words.
-          </li>
-          <li>
-            Automatic repetition of words and phrases that need more practice.
-          </li>
-          <li>
-            Lesson progress tracking, including spoken words and speaking speed.
-          </li>
-          <li>
-            A large learning base with words, phrases, sentences, and real-life
-            examples.
-          </li>
+          <li>Associations with images and phrases to help users remember words.</li>
+          <li>Automatic repetition of words and phrases that need more practice.</li>
+          <li>Lesson progress tracking, including spoken words and speaking speed.</li>
+          <li>A large learning base with words, phrases, and real-life examples.</li>
         </ul>
       </section>
 
@@ -91,25 +71,17 @@ export default function AppInfoPage() {
       </section>
 
       <section className={sectionCls}>
-        <h2 className={h2Cls}>Privacy and terms</h2>
+        <h2 className={h2Cls}>Privacy, terms, and deletion</h2>
         <p className={pCls}>
-          More information about how Tima English handles user data is available
-          in the{" "}
+          More information is available in the{" "}
           <Link className={linkCls} href="/privacy">
             Privacy Policy
-          </Link>{" "}
-          and{" "}
+          </Link>
+          ,{" "}
           <Link className={linkCls} href="/terms">
             Terms of Use
           </Link>
-          .
-        </p>
-      </section>
-
-      <section className={sectionCls}>
-        <h2 className={h2Cls}>Account deletion</h2>
-        <p className={pCls}>
-          Users can request account deletion through the{" "}
+          , and{" "}
           <Link className={linkCls} href="/delete-account">
             Delete Account
           </Link>{" "}
