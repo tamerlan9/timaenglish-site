@@ -64,7 +64,7 @@ export default function AppInfoPage() {
         <h2 className={h2Cls}>User data</h2>
         <p className={pCls}>
           Tima English may use account information, authentication identifiers,
-          lesson progress, voice exercise results, learning statistics, and app
+          lesson progress, learning statistics, and app
           usage data to provide the learning experience, save progress, improve
           app performance, and maintain account access.
         </p>
