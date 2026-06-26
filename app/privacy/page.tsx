@@ -31,6 +31,14 @@ export default function PrivacyPolicy() {
         <ul className={ulCls}>
           <li>Email address (for account creation and login)</li>
           <li>Authentication identifiers</li>
+          <li>
+            Apple account information, such as email address and authentication
+            identifier, when Apple Sign-In is used
+          </li>
+          <li>
+            Google account information, such as email address and authentication
+            identifier, when Google Sign-In is used
+          </li>
           <li>Learning progress and lesson statistics</li>
           <li>App usage data (to improve app performance and stability)</li>
         </ul>
@@ -50,8 +58,10 @@ export default function PrivacyPolicy() {
       <section className={sectionCls}>
         <h2 className={h2Cls}>Authentication</h2>
         <p className={pCls}>
-          Authentication is handled securely via email login and trusted
-          third-party authentication providers when enabled. Biometric
+          Authentication is handled securely via email login, Apple Sign-In, and
+          Google Sign-In when enabled. When users choose Google Sign-In, Tima
+          English uses their Google account information only to create an account,
+          sign in, and save learning progress across devices. Biometric
           authentication (Face ID / Touch ID) is used only locally on the device
           to unlock the app and is never transmitted or stored by Tima English.
         </p>
