@@ -1,4 +1,5 @@
 // app/app-info/page.tsx
+import Link from "next/link";
 import LegalPage from "../legal/_components/LegalPage";
 
 export const metadata = {
@@ -13,38 +14,106 @@ const h2Cls =
 
 const pCls = "text-zinc-700 dark:text-zinc-300 leading-relaxed";
 
+const ulCls =
+  "list-disc pl-5 space-y-2 text-zinc-700 dark:text-zinc-300 leading-relaxed";
+
+const linkCls = "underline hover:no-underline";
+
 export default function AppInfoPage() {
   return (
     <LegalPage title="App Info" updatedAt="2026-06-27">
       <p className={pCls}>
-        Tima English is an English learning app for speaking practice.
+        Tima English is an English learning app focused on speaking practice,
+        vocabulary building, pronunciation, and real conversational English.
       </p>
 
       <section className={sectionCls}>
         <h2 className={h2Cls}>About the app</h2>
         <p className={pCls}>
-          Users learn words and phrases through short interactive lessons, voice
-          exercises, associations, and mini-games.
+          Tima English helps users practice English through short interactive
+          lessons, voice exercises, associations, examples, and mini-games. The
+          app is designed for both beginners and more advanced learners who want
+          to improve their speaking skills.
         </p>
+      </section>
+
+      <section className={sectionCls}>
+        <h2 className={h2Cls}>Learning approach</h2>
+        <p className={pCls}>
+          Every learner is different. Vocabulary, grammar, pronunciation, and
+          speaking speed can vary from person to person. Because of this, Tima
+          English does not rely only on fixed traditional levels. Lessons are
+          generated as flexible combinations of words, phrases, and tasks that
+          imitate real speaking practice.
+        </p>
+      </section>
+
+      <section className={sectionCls}>
+        <h2 className={h2Cls}>Main features</h2>
+        <ul className={ulCls}>
+          <li>Personalized speaking lessons and voice exercises.</li>
+          <li>
+            Associations with images and phrases to help users remember words.
+          </li>
+          <li>
+            Automatic repetition of words and phrases that need more practice.
+          </li>
+          <li>
+            Lesson progress tracking, including spoken words and speaking speed.
+          </li>
+          <li>
+            A large learning base with words, phrases, sentences, and real-life
+            examples.
+          </li>
+        </ul>
       </section>
 
       <section className={sectionCls}>
         <h2 className={h2Cls}>Account and sign-in</h2>
         <p className={pCls}>
           Users can create an account using email, Apple Sign-In, or Google
-          Sign-In. Account information is used only for authentication and saving
-          learning progress. If users choose Google Sign-In, Tima English uses their
-          Google account information only for authentication and saving learning
-          progress.
+          Sign-In. Account information is used only for authentication, account
+          access, saving learning progress, and providing the app experience. If
+          users choose Google Sign-In, Tima English uses their Google account
+          information only for sign-in, account identification, and saving
+          learning progress.
         </p>
       </section>
 
       <section className={sectionCls}>
         <h2 className={h2Cls}>User data</h2>
         <p className={pCls}>
-          Tima English uses account information, authentication identifiers,
-          lesson progress, and app usage data only to provide the learning
-          experience, save progress, and improve app performance.
+          Tima English may use account information, authentication identifiers,
+          lesson progress, voice exercise results, learning statistics, and app
+          usage data to provide the learning experience, save progress, improve
+          app performance, and maintain account access.
+        </p>
+      </section>
+
+      <section className={sectionCls}>
+        <h2 className={h2Cls}>Privacy and terms</h2>
+        <p className={pCls}>
+          More information about how Tima English handles user data is available
+          in the{" "}
+          <Link className={linkCls} href="/privacy">
+            Privacy Policy
+          </Link>{" "}
+          and{" "}
+          <Link className={linkCls} href="/terms">
+            Terms of Use
+          </Link>
+          .
+        </p>
+      </section>
+
+      <section className={sectionCls}>
+        <h2 className={h2Cls}>Account deletion</h2>
+        <p className={pCls}>
+          Users can request account deletion through the{" "}
+          <Link className={linkCls} href="/delete-account">
+            Delete Account
+          </Link>{" "}
+          page.
         </p>
       </section>
     </LegalPage>
