@@ -1,15 +1,12 @@
+// app/app-info/page.tsx
 import Image from "next/image";
 import Link from "next/link";
 
-const INSTAGRAM_WEB = "https://instagram.com/tima_english";
-const TELEGRAM_WEB = "https://t.me/tima_english";
-const WHATSAPP_WEB = "https://whatsapp.com/channel/0029Vb7WZk90gcfQxSF5Jm1f";
+export const metadata = {
+  title: "App Info • Tima English",
+};
 
-const APPSTORE_URL = "https://apps.apple.com/app/id6757214750";
-const GOOGLEPLAY_URL =
-  "https://play.google.com/store/apps/details?id=kg.temirlan.timaenglish";
-
-export default function Home() {
+export default function AppInfoPage() {
   return (
     <main
       className="min-h-[100svh] flex flex-col items-center justify-center
@@ -19,8 +16,8 @@ export default function Home() {
       <Image
         src="/logo.png"
         alt="Tima English logo"
-        width={120}
-        height={120}
+        width={110}
+        height={110}
         priority
         className="mb-6"
       />
@@ -29,94 +26,55 @@ export default function Home() {
         Tima English
       </h1>
 
-      <p className="text-lg text-zinc-600 dark:text-zinc-400 max-w-xl mb-8">
-        <span className="block">
-          Английский, который подстраивается под тебя
-        </span>
-        <span className="block mt-3">
-          Ассоциации, мини-игры и живая речь
-        </span>
-      </p>
+      <div className="max-w-2xl space-y-6 text-zinc-600 dark:text-zinc-400">
+        <section>
+          <h2 className="text-xl font-semibold mb-2 text-black dark:text-white">
+            About the app
+          </h2>
+          <p className="text-lg leading-relaxed">
+            Tima English is an English learning app for speaking practice.
+            Users learn words and phrases through short interactive lessons,
+            voice exercises, associations, and mini-games.
+          </p>
+        </section>
 
-      <div className="flex gap-4 flex-wrap justify-center items-center">
-        <a
-          href={APPSTORE_URL}
-          target="_blank"
-          rel="noreferrer"
-          aria-label="Download on the App Store"
-        >
-          <img
-            src="/appstore.svg"
-            alt="Download on the App Store"
-            style={{ height: 60, width: "auto" }}
-          />
-        </a>
+        <section>
+          <h2 className="text-xl font-semibold mb-2 text-black dark:text-white">
+            Account and sign-in
+          </h2>
+          <p className="text-lg leading-relaxed">
+            Users can create an account using email, Apple Sign-In, or Google
+            Sign-In. If users choose Google Sign-In, Tima English uses their
+            Google account information only for authentication and saving
+            learning progress.
+          </p>
+        </section>
 
-        <a
-          href={GOOGLEPLAY_URL}
-          target="_blank"
-          rel="noreferrer"
-          aria-label="Get it on Google Play"
-        >
-          <img
-            src="/googleplay.svg"
-            alt="Get it on Google Play"
-            style={{ height: 60, width: "auto" }}
-          />
-        </a>
-      </div>
-
-      <div className="mt-8 flex items-center justify-center gap-4">
-        <a
-          href={TELEGRAM_WEB}
-          target="_blank"
-          rel="noreferrer"
-          aria-label="Telegram"
-          className="inline-flex items-center justify-center rounded-full p-3
-                     bg-white/27 ring-1 ring-white/42
-                     transition-transform duration-150
-                     hover:scale-110 active:scale-95"
-        >
-          <img src="/telegram.svg" alt="Telegram" className="h-6 w-6" />
-        </a>
-
-        <a
-          href={INSTAGRAM_WEB}
-          target="_blank"
-          rel="noreferrer"
-          aria-label="Instagram"
-          className="inline-flex items-center justify-center rounded-full p-3
-                     bg-white/27 ring-1 ring-white/42
-                     transition-transform duration-150
-                     hover:scale-110 active:scale-95"
-        >
-          <img src="/instagram.svg" alt="Instagram" className="h-6 w-6" />
-        </a>
-
-        <a
-          href={WHATSAPP_WEB}
-          target="_blank"
-          rel="noreferrer"
-          aria-label="WhatsApp"
-          className="inline-flex items-center justify-center rounded-full p-3
-                     bg-white/27 ring-1 ring-white/42
-                     transition-transform duration-150
-                     hover:scale-110 active:scale-95"
-        >
-          <img src="/whatsapp.svg" alt="WhatsApp" className="h-6 w-6" />
-        </a>
+        <section>
+          <h2 className="text-xl font-semibold mb-2 text-black dark:text-white">
+            User data
+          </h2>
+          <p className="text-lg leading-relaxed">
+            Tima English uses account information, authentication identifiers,
+            lesson progress, and app usage data only to provide the learning
+            experience, save progress, and improve app performance.
+          </p>
+        </section>
       </div>
 
       <footer className="mt-12 text-sm text-zinc-500 dark:text-zinc-400">
         <div className="flex flex-wrap gap-x-4 gap-y-2 justify-center">
+          <Link className="hover:underline" href="/">
+            Home
+          </Link>
+          <Link className="hover:underline" href="/app-info">
+            App Info
+          </Link>
           <Link className="hover:underline" href="/privacy">
             Privacy Policy
           </Link>
           <Link className="hover:underline" href="/terms">
             Terms of Use
-          </Link>
-          <Link className="hover:underline" href="/media">
-            Media & Copyright
           </Link>
           <Link className="hover:underline" href="/delete-account">
             Delete Account
