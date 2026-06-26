@@ -1,6 +1,5 @@
 // app/app-info/page.tsx
 import LegalPage from "../legal/_components/LegalPage";
-import Link from "next/link";
 
 export const metadata = {
   title: "App Info • Tima English",
@@ -46,21 +45,6 @@ export default function AppInfoPage() {
           lesson progress, and app usage data only to provide the learning
           experience, save progress, and improve app performance.
         </p>
-      </section>
-
-      <section className={sectionCls}>
-        <h2 className={h2Cls}>Legal</h2>
-        <div className="mt-3 flex flex-wrap gap-x-4 gap-y-2 text-zinc-700 dark:text-zinc-300">
-          <Link className="hover:underline" href="/privacy">
-            Privacy Policy
-          </Link>
-          <Link className="hover:underline" href="/terms">
-            Terms of Use
-          </Link>
-          <Link className="hover:underline" href="/delete-account">
-            Delete Account
-          </Link>
-        </div>
       </section>
     </LegalPage>
   );
