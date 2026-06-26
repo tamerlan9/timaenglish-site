@@ -31,10 +31,13 @@ export default function Home() {
 
       <p className="text-lg text-zinc-600 dark:text-zinc-400 max-w-xl mb-8">
         <span className="block">
-          Английский, который подстраивается под тебя
+          Tima English — приложение для изучения разговорного английского
         </span>
         <span className="block mt-3">
-          Ассоциации, мини-игры и живая речь
+          Практикуй слова, произношение и живую речь через короткие интерактивные уроки
+        </span>
+        <span className="block mt-3">
+          Ассоциации, мини-игры и персональный прогресс
         </span>
       </p>
 
