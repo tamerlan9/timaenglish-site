@@ -18,7 +18,7 @@ const pCls = "text-zinc-700 dark:text-zinc-300 leading-relaxed";
 
 export default function PrivacyPolicy() {
   return (
-    <LegalPage title="Privacy Policy" updatedAt="2025-12-23">
+    <LegalPage title="Privacy Policy" updatedAt="2026-06-27">
       {/* Intro */}
       <p className={pCls}>
         Tima English respects user privacy and collects only the data required to
