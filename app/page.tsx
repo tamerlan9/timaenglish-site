@@ -115,6 +115,9 @@ export default function Home() {
           <Link className="hover:underline" href="/terms">
             Terms of Use
           </Link>
+          <Link className="hover:underline" href="/app-info">
+            App Info
+          </Link>
           <Link className="hover:underline" href="/media">
             Media & Copyright
           </Link>

@@ -1,8 +1,9 @@
-// app/delete-account/page.tsx
+// app/app-info/page.tsx
 import LegalPage from "../legal/_components/LegalPage";
+import Link from "next/link";
 
 export const metadata = {
-  title: "Account Deletion • Tima English",
+  title: "App Info • Tima English",
 };
 
 const sectionCls =
@@ -11,65 +12,55 @@ const sectionCls =
 const h2Cls =
   "text-lg font-semibold tracking-tight text-black dark:text-white";
 
-const ulCls =
-  "mt-3 list-decimal pl-6 space-y-1 text-zinc-700 dark:text-zinc-300";
-
 const pCls = "text-zinc-700 dark:text-zinc-300 leading-relaxed";
 
-export default function DeleteAccountPage() {
+export default function AppInfoPage() {
   return (
-    <LegalPage title="Account and Data Deletion" updatedAt="2026-03-09">
-      {/* Intro */}
+    <LegalPage title="App Info" updatedAt="2026-06-27">
       <p className={pCls}>
-        Users of <strong>Tima English</strong> can delete their account and all
-        associated personal data at any time.
+        Tima English is an English learning app for speaking practice.
       </p>
 
-      {/* Main method */}
       <section className={sectionCls}>
-        <h2 className={h2Cls}>How to delete your account</h2>
-        <ol className={ulCls}>
-          <li>Open the Tima English app</li>
-          <li>Go to <strong>Profile → Settings</strong></li>
-          <li>Select <strong>Delete account</strong> and confirm</li>
-        </ol>
-
-        <p className="mt-4 text-zinc-700 dark:text-zinc-300">
-          This action permanently deletes your account and learning data.
-          Any active subscription will no longer be associated with the deleted account.
+        <h2 className={h2Cls}>About the app</h2>
+        <p className={pCls}>
+          Users learn words and phrases through short interactive lessons, voice
+          exercises, associations, and mini-games.
         </p>
       </section>
 
-      {/* Fallback */}
       <section className={sectionCls}>
-        <h2 className={h2Cls}>If you cannot access the app</h2>
+        <h2 className={h2Cls}>Account and sign-in</h2>
         <p className={pCls}>
-          If you are unable to access the app, contact our support team and provide the
-          <strong> Account</strong> shown in the app settings under
-        <strong> Technical information</strong>.
+          Users can create an account using email, Apple Sign-In, or Google
+          Sign-In. If users choose Google Sign-In, Tima English uses their
+          Google account information only for authentication and saving learning
+          progress.
         </p>
+      </section>
 
-        <div className="mt-3 font-semibold text-black dark:text-white">
-          timaenglish.app@gmail.com
+      <section className={sectionCls}>
+        <h2 className={h2Cls}>User data</h2>
+        <p className={pCls}>
+          Tima English uses account information, authentication identifiers,
+          lesson progress, and app usage data only to provide the learning
+          experience, save progress, and improve app performance.
+        </p>
+      </section>
+
+      <section className={sectionCls}>
+        <h2 className={h2Cls}>Legal</h2>
+        <div className="mt-3 flex flex-wrap gap-x-4 gap-y-2 text-zinc-700 dark:text-zinc-300">
+          <Link className="hover:underline" href="/privacy">
+            Privacy Policy
+          </Link>
+          <Link className="hover:underline" href="/terms">
+            Terms of Use
+          </Link>
+          <Link className="hover:underline" href="/delete-account">
+            Delete Account
+          </Link>
         </div>
-      </section>
-
-      {/* Data deleted */}
-      <section className={sectionCls}>
-        <h2 className={h2Cls}>Data we delete</h2>
-        <ul className="mt-3 list-disc pl-6 space-y-1 text-zinc-700 dark:text-zinc-300">
-          <li>Account information and preferences</li>
-          <li>Learning progress and statistics</li>
-        </ul>
-      </section>
-
-      {/* Retention */}
-      <section className={sectionCls}>
-        <h2 className={h2Cls}>Retention period</h2>
-        <p className={pCls}>
-          All personal data is permanently deleted within 30 days. Limited data
-          may be retained for legal or security purposes during this period.
-        </p>
       </section>
     </LegalPage>
   );
