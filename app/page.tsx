@@ -109,14 +109,14 @@ export default function Home() {
 
       <footer className="mt-12 text-sm text-zinc-500 dark:text-zinc-400">
         <div className="flex flex-wrap gap-x-4 gap-y-2 justify-center">
+          <Link className="hover:underline" href="/app-info">
+            App Info
+          </Link>
           <Link className="hover:underline" href="/privacy">
             Privacy Policy
           </Link>
           <Link className="hover:underline" href="/terms">
             Terms of Use
-          </Link>
-          <Link className="hover:underline" href="/app-info">
-            App Info
           </Link>
           <Link className="hover:underline" href="/media">
             Media & Copyright
