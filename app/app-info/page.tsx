@@ -32,7 +32,8 @@ export default function AppInfoPage() {
         <h2 className={h2Cls}>Account and sign-in</h2>
         <p className={pCls}>
           Users can create an account using email, Apple Sign-In, or Google
-          Sign-In. If users choose Google Sign-In, Tima English uses their
+          Sign-In. Account information is used only for authentication and saving
+          learning progress. If users choose Google Sign-In, Tima English uses their
           Google account information only for authentication and saving learning
           progress.
         </p>
