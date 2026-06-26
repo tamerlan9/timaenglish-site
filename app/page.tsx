@@ -30,7 +30,7 @@ export default function Home() {
       </h1>
 
       <p className="text-lg text-zinc-600 dark:text-zinc-400 max-w-xl mb-8">
-        <span className="block">
+        <span className="block text-xl font-medium text-zinc-300">
           Приложение для изучения разговорного английского
         </span>
         <span className="block mt-3">
